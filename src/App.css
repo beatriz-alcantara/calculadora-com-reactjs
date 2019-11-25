@@ -1,22 +1,20 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-columns: 20vw 60vw 20vw;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculadora {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: solid;
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 
-.App-link {
-  color: #09d3ac;
+.calculadora  button {
+  width: 6vw;
+  height: 7vh;
+  border: solid 1px;
 }
